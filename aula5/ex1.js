@@ -46,6 +46,7 @@ function stringMaiuscula(string) {
 }
 stringMaiuscula('murilo');
 
+
 //Tipo de dado - 8
 function tipoDeDado(dado) {
     return console.log(typeof dado);
