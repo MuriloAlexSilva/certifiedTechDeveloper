@@ -30,12 +30,14 @@ console.log(divisao(5,3));
 console.log("Agora vou testar a função de divisão com o valor de zero em um dos parametros");
 console.log(divisao(5,0));
 
+//QUadrado do numero
 function quadradoDoNumero(numA) {
   let quadradoDoNumero = multiplicacao(numA,numA);
     return quadradoDoNumero;
 }
 console.log(quadradoDoNumero(2));
 
+//Media de tres numeros
 function mediaDeTresNumeros(numA,numB,numC) {
     let soma = adicionar(numA,numB);
     soma = adicionar(soma,numC);
@@ -43,3 +45,10 @@ function mediaDeTresNumeros(numA,numB,numC) {
     return mediaTres;
 }
 console.log(mediaDeTresNumeros(2,2,2));
+
+//Calcula porcentagem
+function calculaPorcentagem(numTotal, porcentagem) {
+    let resultado = multiplicacao(numTotal,porcentagem)/100;
+    return resultado;
+}
+console.log(calculaPorcentagem(100,45));
