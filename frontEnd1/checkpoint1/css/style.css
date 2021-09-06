@@ -1,9 +1,36 @@
-body{
-    background-image: url(https://www.visiteapucarana.com.br/wp-content/uploads/2019/04/apucarana.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+
+body {
+    background-image: url(https://www.aen.pr.gov.br/modules/galeria/uploads/62308/news_interna_apucarana001.jpg);
     height: 1000px;
     width: 100%;
-    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+
 }
-header{
-    padding: ;
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px;
+    font-size: 60px;
+    color: maroon;
+    font-weight: bold;
+z-index: 2;
+}
+
+#sobre {
+   text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 20px 40px;
+}
+
+iframe{
+   padding: 380px 30px 10px;
+    align-items: center;
 }
