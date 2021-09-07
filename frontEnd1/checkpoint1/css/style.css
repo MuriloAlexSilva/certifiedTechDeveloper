@@ -18,11 +18,18 @@ h1 {
     font-size: 60px;
     color: maroon;
     font-weight: bold;
-z-index: 2;
+    z-index: 2;
+}
+
+h2 {
+    text-align: center;
+    color: maroon;
+    font-size: 40px;
+    padding: 20px;
 }
 
 #sobre {
-   text-align: center;
+    text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
@@ -30,7 +37,21 @@ z-index: 2;
     padding: 20px 40px;
 }
 
-iframe{
-   padding: 380px 30px 10px;
+#curiosidades {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 20px 40px;
+}
+#iconYou, #iconInsta{
+    position: relative;
+    bottom: 20px;
+    left: 1200px;
+}
+
+iframe {
+    padding: 380px 30px 10px;
     align-items: center;
 }
