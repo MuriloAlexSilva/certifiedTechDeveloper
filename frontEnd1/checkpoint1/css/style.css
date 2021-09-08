@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+
+body {
+    background-image: url(https://www.aen.pr.gov.br/modules/galeria/uploads/62308/news_interna_apucarana001.jpg);
+    height: 1000px;
+    width: 100%;
+    background-position: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px;
+    font-size: 60px;
+    color: maroon;
+    font-weight: bold;
+    z-index: 2;
+}
+
+h2 {
+    text-align: center;
+    color: maroon;
+    font-size: 40px;
+    padding: 20px;
+}
+
+#sobre {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 20px 40px;
+}
+
+#curiosidades {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 20px 40px;
+}
+#iconYou, #iconInsta{
+    position: relative;
+    bottom: 20px;
+    left: 1200px;
+}
+
+iframe {
+    padding: 380px 30px 10px;
+    align-items: center;
+}
