@@ -1,0 +1,18 @@
+
+/*Exemplo de FlexBox*/
+.main-menu{
+    list-style: none;
+    display: flex;
+    gap: 12px;/*Separa os itens com os pixels denominados*/
+
+    /*
+    flex-direction: Muda a direção do elemento
+    flex-wrap:wrap Os elementos podem pular para a linha abaixo caso não haja espaço para ele existir na linha de cima
+    
+    
+    
+    
+    
+    
+    */
+}

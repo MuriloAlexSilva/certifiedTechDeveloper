@@ -1,0 +1,20 @@
+#teste:hover {
+    background-color: #1a73e8;
+    color: #fff;
+    transition-property: background-color,color;
+    transition-duration: 0.5s;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+body{
+    background-color: gray;
+}
+
+button:hover{
+    background-color: #1a73e8;
+    color: #fff;
+    transition-property: background-color,color;
+    transition-duration: 0.5s;
+}
