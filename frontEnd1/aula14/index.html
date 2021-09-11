@@ -17,34 +17,49 @@
     <form>
         <fieldset>
             <legend>Identificação do Usuário</legend>
-            <p>Nome: <input type="text" name="nome"></p>
-            <p>Email: <input type="email" name="email"></p>
-            <p>Senha: <input type="password" name="senha"></p>
+            <p>Nome: <input type="text" name="nome" tabindex="1"></p>
+            <p>Email: <input type="email" name="email" tabindex="2"></p>
+            <p>Senha: <input type="password" name="senha" tabindex="3"></p>
             <fieldset>
                 <legend>Sexo</legend>
-                <p><input type="radio" name="tMasc" id="tMasc">Masculino</p>
-                <p><input type="radio" name="tFemin" id="tFemin">Feminino</p>
+                <p><input type="radio" name="tsexo" id="tMasc" tabindex="4" checked>Masculino</p>
+                <p><input type="radio" name="tsexo" id="tFemin">Feminino</p>
             </fieldset>
+            <p><center><input type="date" name="date" id="date"></center></p>
         </fieldset>
         <fieldset>
             <legend>Endereço</legend>
-            <p>CEP: <input type="number" name="cep"></p>
-            <p>Rua: <input type="text" name="rua"></p>
-            <p>Cidade: <input type="text" name="cidade"></p>
+            <p>CEP: <input type="number" name="cep" tabindex="5"></p>
+            <p>Rua: <input type="text" name="rua" tabindex="6"></p>
+            <p>Cidade: <input type="text" name="cidade" tabindex="7"></p>
             <p>Estado:
-                <select name="tEst" id="tEst">
-                    <option value="mg">MG</option>
+                <select name="tEst" id="tEst" tabindex="8">
+                    <option value="mg" >MG</option>
                     <option value="pr">PR</option>
                     <option value="sp">SP</option>
 
                 </select>
             </p>
             <legend>Deixe sua mensagem:</legend>
-            <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+            <textarea name="obs" id="obs" cols="30" rows="10" tabindex="9"></textarea>
+        </fieldset>
+        <fieldset>
+            <select id="select" tabindex="10">
+                <optgroup label="Ferrari">
+                    <option value="458 Spider">Spider</option>
+                    <option value="F12 Berlinetta">Berlinetta</option>
+                    <option value="California">California</option>
+                </optgroup>
+                <optgroup label="Porsche">
+                    <option value="458 Spider">Spider</option>
+                    <option value="F12 Berlinetta">Berlinetta</option>
+                    <option value="California">California</option>
+                </optgroup>
+            </select>
         </fieldset>
         <center>
-            <p><input type="submit" value="Enviar"> 
-          <input type="reset" value="Apagar"> 
+            <p><input type="submit" value="Enviar" tabindex="11"> 
+          <input type="reset" value="Apagar" tabindex="12"> 
         </p>
         </center>
 
