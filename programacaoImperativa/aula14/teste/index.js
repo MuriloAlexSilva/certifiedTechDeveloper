@@ -1,1 +1,5 @@
-const fs = require('series');
+
+//Modelor de require 
+let soma = require('./app');
+
+soma(5,7);
