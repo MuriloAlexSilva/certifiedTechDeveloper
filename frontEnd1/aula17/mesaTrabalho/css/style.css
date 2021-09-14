@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bola-de-futebol {
+    from {
+        margin-left: 0%;
+        opacity: 0%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        margin-left: 90%;
+        opacity: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+.bola-de-futebol {
+    height: 150px;
+    width: 150px;
+    animation: bola-de-futebol 4s infinite;
+}
+
+.img {
+    padding-top: 10px;
+}
+
+.button {
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+button {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: white;
+    color: green;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
