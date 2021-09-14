@@ -16,5 +16,5 @@ button:hover{
     background-color: #1a73e8;
     color: #fff;
     transition-property: background-color,color;
-    transition-duration: 0.5s;
+    transition-duration: 0.9s;
 }
