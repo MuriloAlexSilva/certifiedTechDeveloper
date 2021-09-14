@@ -1,0 +1,27 @@
+p:hover {
+    background-color: gold;
+  }
+
+  p::first-letter{
+    font-size: 30px;
+    color: red;
+  }
+  #vazio:focus{
+      background-color: red;
+  }
+  input:checked{
+     color: yellow;
+  }
+
+  a:nth-child(1){
+      background-color: tomato;
+  }
+
+  button:disabled {
+    background-color: gray;
+    color: white;
+  }
+  button:enabled {
+    background-color: green;
+    color: white;
+  }
