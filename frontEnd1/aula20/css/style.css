@@ -1,0 +1,35 @@
+body header{
+    background-color: salmon;
+    grid-area: header;
+    height: 100px;
+}
+body aside{
+    background-color: crimson;
+    grid-area: aside;
+    height: 200px;
+}
+body main{
+    background-color: deepskyblue;
+    grid-area: main;
+}
+body footer{
+    background-color: lightpink;
+    grid-area: footer;
+    height: 100px;
+}
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    /*O 200px seria para a largura da primeira coluna*/
+    /*O 1fr seria para a largura da segunda coluna*/
+    
+    /*No grid abaixo definimos as posições dos elementos na tela,
+    no caso abaixo teremos o header em uma linha
+    o aside e main em outra
+    o footer na ultima, entretanto para isto temos que colocar o grid area em cada elemento    
+    */
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+}
