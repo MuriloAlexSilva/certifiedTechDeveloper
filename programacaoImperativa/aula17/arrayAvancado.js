@@ -35,6 +35,15 @@ let paises = ['Brasil','Cuba','Peru'];
 paises.forEach(pais => console.log(pais));//Separa o array
 
 
+//Outro modelo de forEach com o indice
+console.log('Outro modelo de .forEach');
+let teste = [1,2,3,4,5];
+teste.forEach(function (elemento,indice) {
+    console.log("Elemento: " + elemento + " indice: " + indice);
+})
+
+
+
 //.slice()
 let numeros3 = [3,4,5,6,7];
 let subarray = numeros3.slice(1,-2);
