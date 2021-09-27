@@ -95,7 +95,7 @@ input {
 section {
     display: flex;
     flex-direction: row;
-    width: 150px;
+
     margin: auto;
     align-items: center;
 }
@@ -105,4 +105,11 @@ section {
         max-width: 400px;
     }
 
+}
+h5{
+    color: white;
+}
+button{
+    width: 100px;
+    height: 30px;
 }
