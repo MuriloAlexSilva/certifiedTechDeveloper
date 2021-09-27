@@ -1,3 +1,7 @@
+/* Checkpoint 2 - Front end I
+Integrantes: Evandro Mariano, José Lucas, Murilo Alex Silva. */
+
+
 *{
     box-sizing: border-box
 }
@@ -5,9 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 body{
-    background-image: url(../assets/images/euclides_da_cunha.jpg);
-    background-repeat:repeat-y;
-    background-size: cover;
+    background-color: #161B22;
     display: flex;
     justify-content: center;
 }
