@@ -4,6 +4,7 @@ body {
     background-color: #161B22;
     margin: auto;
 
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -17,6 +18,7 @@ body {
         margin: 10px;
         padding: 10px;
         color: white;
+        
 
     }
 
@@ -93,8 +95,8 @@ input {
 
 input:hover,
 button:hover {
-    transform-origin: left;
-    transform: scale(1.15);
+    transform-origin: center;
+    transform: scale(1.03);
     background-color: #161B22;
     max-width: 100%;
     color: white;
@@ -106,6 +108,8 @@ section {
     flex-direction: row;
     margin: auto;
     align-items: center;
+    
+ 
     
 }
 
@@ -124,7 +128,7 @@ h5 {
 .botao {
     width: 100px;
     height: 30px;
-    justify-content: space-between;
     border-radius: 10px;
+
 
 }
