@@ -1,0 +1,13 @@
+$primary-color:green;
+$cor-teste: white;
+$cor-texto:red;
+$borderColor:blue;
+
+h1{
+    background-color: $cor-teste;
+    border: 3px solid $borderColor;
+}
+body{
+    background-color: $primary-color;
+    color: $cor-texto;
+}
