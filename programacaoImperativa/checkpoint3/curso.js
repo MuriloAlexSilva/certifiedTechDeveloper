@@ -3,7 +3,7 @@ let aluno = require('./aluno');
 
 let alunoAnderson = new aluno.Aluno('Anderson', 3, [10, 10, 10, 10]);
 
-let alunoElivelton = new aluno.Aluno('Elivelton', 3, [9, 8, 9, 9]);
+let alunoElivelton = new aluno.Aluno('Elivelton', 3, [5, 6, 7, 4]);
 
 let curso = {
     nomeDoCurso: "",
