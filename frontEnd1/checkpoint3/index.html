@@ -1,185 +1,342 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./style/style.css" type="text/css" />
+    <title>DH Plus</title>
+  </head>
+  <body class="bg-secondary">
+    <div class="container-fluid">
+      <header class="bg-dark sticky-top d-flex justify-content-around">
+       <h1 class="gradient">DH+</h1>
+        <nav class="navbar navbar-rigth">
+          <div class="container-fluid">
+            <ul class="nav navbar-rigth">
+              <li class="active">
+                <a class="badge badge-primary m-3 nav-link" href="#">INÍCIO</a>
+              </li>
+              <li><a class="badge badge-primary m-3 nav-link" href="#catalogo">CATÁLOGO</a></li>
+              <li><a class="badge badge-primary m-3 nav-link" href="https://www.adorocinema.com/filmes/em-cartaz/estreias/" target="_blank">LANÇAMENTOS</a></li>
+            </ul>
+            <a href="#parallax-image"><button class="btn btn-primary navbar-btn m-2">ASSINE AGORA</button></a>
+            <a href="./pages/login.html"><button class="btn btn-primary navbar-btn m-2">ENTRAR</button></a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                  src="./assets/images/13408.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  height="30%"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Instalar o bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
- 
-  <title>Checkpoint 3 - Front End I</title>
-</head>
-
-<body>
-  <header>
-    <div class="nav">
-      <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Home</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Lançamentos</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Favoritos</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Assistindo</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Sobre</a>
-      </nav>
-    </div>
-  </header>
- 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="pages/harry-potter.html"><img src="images/harry-potter.jpg" class="d-block w-100" alt="..." height="500px"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                  src="./assets/images/13503.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  height="30%"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                  src="./assets/images/13530.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  height="30%"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
-      <div class="carousel-item">
-        <a href="pages/senhor-dos-aneis.html"><img src="images/senhor-dos-aneis.jpg" class="d-block w-100" alt="..." height="500px"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <a href="pages/matrix.html"><img src="images/matrix.jpg" class="d-block w-100" alt="..." height="500px"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <h4>Lançamentos</h4>
-  <div class="card">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div id="parallax-image">
+          <div class="row h-100 p-4">
+            <div class="col-md-12 d-flex flex-column align-items-center justify-content-end">
+              <h1 class="text-center text-white">Filmes, séries e muito mais.</h1>
+              <h2 class="text-center text-white">
+                Assista onde quiser. Cancele quando quiser.
+              </h2>
+              <button class="btn btn-primary btn-lg p-4">ASSINE POR R$ 19,90</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div id="catalogo" class="container-fluid">
+          <div class="row">
+          <!-- card1 -->
+          <div class="wrapper col-4">
+            <div class="main_card">
+              <div class="card_left">
+                <div class="card_datails">
+                  <h1>A Chegada</h1>
+                  <div class="card_cat">
+                    <p class="year">2016</p>
+                    <p class="genre">Ficção</p>
+                    <p class="time">1h 56m</p>
+                  </div>
+                  <div class="social-btn">
+                    <button>
+                      <i class="fas fa-play"></i> Trailer
+                    </button>
+                  </div>	                 
+                </div>
+              </div>
+              <div class="card_right">
+                <div class="img_container">
+                  <img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/10/19/01/57/552532.jpg" alt="A chegada">
+                  </div>
+                  <div class="play_btn">
+                    <a href="./pages/aChegada.html" target="_blank">
+                      <i class="fas fa-play-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="wrapper col-4">
+              <div class="main_card">
+                <div class="card_left">
+                  <div class="card_datails">
+                    <h1>#Alive</h1>
+                    <div class="card_cat">
+                      <p class="year">2020</p>
+                      <p class="genre">Drama</p>
+                      <p class="time">1h 38m</p>
+                    </div>
+                    <div class="social-btn">
+                      <button>
+                        <i class="fas fa-play"></i> Trailer
+                      </button>
+                    </div>	                 
+                  </div>
+                </div>
+                <div class="card_right">
+                  <div class="img_container">
+                    <img src="https://br.web.img2.acsta.net/c_310_420/pictures/20/05/27/08/29/4788868.jpg" alt="Alive">
+                    </div>
+                    <div class="play_btn">
+                      <a href="./pages/alive.html" target="_blank">
+                        <i class="fas fa-play-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card3 -->
+              <div class="wrapper col-4">
+                <div class="main_card">
+                  <div class="card_left">
+                    <div class="card_datails">
+                      <h1>Amor e Monstros</h1>
+                      <div class="card_cat">
+                        <p class="year">2021</p>
+                        <p class="genre">Ficção</p>
+                        <p class="time">1h 49m</p>
+                      </div>
+                      <div class="social-btn">
+                        <button>
+                          <i class="fas fa-play"></i> Trailer
+                        </button>
+                      </div>	                 
+                    </div>
+                  </div>
+                  <div class="card_right">
+                    <div class="img_container">
+                      <img src="https://br.web.img3.acsta.net/c_310_420/pictures/20/10/01/10/37/5061463.jpg" alt="Alive">
+                      </div>
+                      <div class="play_btn">
+                        <a href="./pages/amorEMonstros.html" target="_blank">
+                          <i class="fas fa-play-circle"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- card4 -->
+              <div class="wrapper col-4">
+                <div class="main_card">
+                  <div class="card_left">
+                    <div class="card_datails">
+                      <h1>Close</h1>
+                      <div class="card_cat">
+                        <p class="year">2020</p>
+                        <p class="genre">Suspense</p>
+                        <p class="time">1h 34m</p>
+                      </div>
+                      <div class="social-btn">
+                        <button>
+                          <i class="fas fa-play"></i> Trailer
+                        </button>
+                      </div>	                 
+                    </div>
+                  </div>
+                  <div class="card_right">
+                    <div class="img_container">
+                      <img src="https://br.web.img2.acsta.net/c_310_420/pictures/19/01/03/20/55/3060784.jpg" alt="Alive">
+                      </div>
+                      <div class="play_btn">
+                        <a href="./pages/close.html" target="_blank">
+                          <i class="fas fa-play-circle"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card5 -->
+              <div class="wrapper col-4">
+                <div class="main_card">
+                  <div class="card_left">
+                    <div class="card_datails">
+                      <h1>Meu nome é Dolemite</h1>
+                      <div class="card_cat">
+                        <p class="year">2020</p>
+                        <p class="genre">Comédia</p>
+                        <p class="time">1h 58m</p>
+                      </div>
+                      <div class="social-btn">
+                        <button>
+                          <i class="fas fa-play"></i> Trailer
+                        </button>
+                      </div>	                 
+                    </div>
+                  </div>
+                  <div class="card_right">
+                    <div class="img_container">
+                      <img src="https://br.web.img3.acsta.net/c_310_420/pictures/19/08/19/09/31/5727477.jpg" alt="Alive">
+                      </div>
+                      <div class="play_btn">
+                        <a href="./pages/meuNomeEDolemite.html" target="_blank">
+                          <i class="fas fa-play-circle"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- card6 -->
+              <div class="wrapper col-4">
+                <div class="main_card">
+                  <div class="card_left">
+                    <div class="card_datails">
+                      <h1>The Silence</h1>
+                      <div class="card_cat">
+                        <p class="year">2020</p>
+                        <p class="genre">Terror</p>
+                        <p class="time">1h 31m</p>
+                      </div>
+                      <div class="social-btn">
+                        <button>
+                          <i class="fas fa-play"></i> Trailer
+                        </button>
+                      </div>	                 
+                    </div>
+                  </div>
+                  <div class="card_right">
+                    <div class="img_container">
+                      <img src="https://br.web.img3.acsta.net/c_310_420/pictures/19/03/29/16/48/1697689.jpg" alt="Alive">
+                      </div>
+                      <div class="play_btn">
+                        <a href="./pages/theSilence.html" target="_blank">
+                          <i class="fas fa-play-circle"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </main>
+      <hr />
+      <footer class="p-4">
+        <h2 class="text-center">Redes Sociais:</h2>
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="icons">
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+          <div class="icons">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </div>
+          <div class="icons">
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
           </div>
         </div>
-      </div>
+      </footer>
+     
     </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <h4 class="favoritos">Favoritos</h4>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <h4 class="assistindo">Assistindo</h4>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<h4 class="sobre">Sobre</h4>
-  
- 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
-  </script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
