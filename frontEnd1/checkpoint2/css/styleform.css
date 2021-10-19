@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #161B22;
+    margin: auto;
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .orange_taste {
+        background-color: rgba(94, 53, 177, 0.5);
+        border: 2px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        
+
+    }
+
+    .footer::after {
+        content: "Responsiva para celular";
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+
+    .orange_taste {
+        background-color: rgba(94, 53, 177, 0.5);
+        border: 2px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+
+    }
+
+    .footer::after {
+        content: "Responsiva para tablet";
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .orange_taste {
+        background-color: rgba(94, 53, 177, 0.5);
+        border: 2px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+
+    }
+
+    .footer::after {
+        content: "Responsiva para Desktop";
+        color: white;
+    }
+}
+
+
+
+p {
+    margin: auto;
+    font-size: large;
+    text-align: center;
+}
+
+form {
+
+    font-size: large;
+    text-align: left;
+}
+
+hr {
+    border-color: black;
+}
+
+input {
+    width: 350px;
+    max-width: 100%;
+    height: 30px;
+    font-size: large;
+}
+
+input:hover,
+button:hover {
+    transform-origin: center;
+    transform: scale(1.03);
+    background-color: #161B22;
+    max-width: 100%;
+    color: white;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    
+ 
+    
+}
+
+@media (min-width: 400px) {
+    body {
+        max-width: 400px;
+      
+    }
+
+}
+
+h5 {
+    color: white;
+}
+
+.botao {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+
+
+}

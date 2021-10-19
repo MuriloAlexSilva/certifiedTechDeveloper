@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Front End - Segundo Checkpoint</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styleform.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="orange_taste">
+        <p>Checkpoint 02 - Front End I - Turma 02</p>
+    </header>
+    <main class="orange_taste" class="city_locations">
+        <p>Formul&aacute;rio</p>
+        <p>Interesse em Euclides da Cunha - BA</p>
+        <form>
+            <hr />
+            <label for="fnome">Digite seu nome:</label><br>
+            <input type="text" id="fnome" name="fnome" placeholder="Digite o seu nome aqui" maxlength="100"><br>
+            <label for="femail">Digite seu e-mail:</label><br>
+            <input type="email" id="femail" name="femail" placeholder="Digite o seu e-mail aqui"><br>
+            <label for="ftel">Digite seu telefone:</label><br>
+
+            <input type="number" id="ftel" name="ftel" placeholder="Digite o seu n&uacute;mero aqui"><br>
+            <label for="fdnasc">Digite sua data de nascimento:</label><br>
+            <input type="date" id="fdnasc" name="fdnasc" max="2022-01-01" value="2021-09-28"><br>
+            <label for="fnome">Voc&ecirc; &eacute; maior de 18 anos?</label>
+            <section >
+                <input type="radio" name="fmaior">
+                <label for="fmaior">Sim</label>
+                <input type="radio" name="fmaior">
+                <label for="fmaior">Não</label>
+            </section>
+            <label for="fsec">Qual o ponto de interesse na cidade?</label><br>
+            <select >
+                <option value="centro">Lagoa</option>
+                <option value="centro">Centro</option>
+                <option value="centro">Igreja</option>
+                <option value="centro">Praça XX</option>
+                <option value="centro">Metro</option>
+            </select><br>
+            <label for="fInteresse">Quais seus interesses na cidade?</label>
+            <section>
+                <input type="checkbox" name="fmaior">
+                <label for="fmaior">Turista</label>
+                <input type="checkbox" name="fmaior">
+                <label for="fmaior">Residente</label>
+                <input type="checkbox" name="fmaior">
+                <label for="fmaior">Estudante</label>
+            </section>
+            <center>
+                <button type="reset" class="botao">Apagar</button>
+                <button type="submit" class="botao">Enviar</button>
+            </center>
+
+        </form>
+    </main>
+    <footer class="orange_taste">
+        <p class="footer"></p>
+        
+    </footer>
+    <h5><center>Desenvolvido por Evandro Mariano, José Lucas, Murilo Alex Silva</center></h5>
+</body>
+
+</html>
