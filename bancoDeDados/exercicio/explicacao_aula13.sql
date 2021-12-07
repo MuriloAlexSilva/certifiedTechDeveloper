@@ -1,0 +1,102 @@
+USE EMarket;
+
+SELECT
+	*
+FROM Faturas
+ORDER BY
+	CidadeEnvio;
+
+-- GROUP BY PARA AGRUPAR AS CIDADES DE ENVIO DAS FATURAS
+SELECT
+	CidadeEnvio,
+    COUNT(*) AS 'Quantidade de repetições'
+FROM Faturas
+GROUP BY
+	CidadeEnvio
+ORDER BY
+	CidadeEnvio;
+
+-- HAVING E COUNT(*) PARA TRAZER OS REGISTROS AGRUPADOS QUE SE REPETEM MAIS DE 30X
+SELECT
+	CidadeEnvio,
+    COUNT(*) AS 'Quantidade de repetições'
+FROM Faturas
+GROUP BY
+	CidadeEnvio
+HAVING
+	COUNT(*) >= 30
+ORDER BY
+	COUNT(*) DESC;
+
+-- COUNT PARA CONTAR A QUANTIDADE DE FATURAS DO RIO DE JANEIRO
+SELECT
+	COUNT(*) AS 'Quantidade de faturas'
+FROM Faturas
+WHERE
+	CidadeEnvio = 'Rio de Janeiro';
+
+-- MAX PARA VERIFICAR O VALOR MÁXIMO GASTO COM TRANSPORTE NAS MINHAS FATURAS DO RIO DE JANEIRO
+SELECT
+	MAX(Transporte)
+FROM Faturas
+WHERE
+	CidadeEnvio = 'Rio de Janeiro';
+    
+-- MIN PARA VERIFICAR O VALOR MÍNIMO GASTO COM TRANSPORTE NAS MINHAS FATURAS DO RIO DE JANEIRO 
+SELECT
+	MIN(Transporte)
+FROM Faturas
+WHERE
+	CidadeEnvio = 'Rio de Janeiro';
+
+-- AVG PARA TIRAR A MEDIA DAS FATURAS ENVIADAS PARA O RIO DE JANEIRO
+SELECT
+	FORMAT(AVG(Transporte), 2)
+FROM Faturas
+WHERE
+	CidadeEnvio = 'Rio de Janeiro';
+
+-- SUM PARA SOMAR OS VALORES GASTOS COM AS FATURAS ENVIADAS PARA O RIO DE JANEIRO
+SELECT
+	FORMAT(SUM(Transporte), 2)
+FROM Faturas
+WHERE
+	CidadeEnvio = 'Rio de Janeiro';
+
+
+-- DATE FORMAT PARA FORMATAR AS MINHAS DATAS DE REGISTRO
+SELECT
+	DATE_FORMAT(DataRegistro, '%d/%m/%y')
+FROM Faturas
+WHERE
+	CidadeEnvio = 'Rio de Janeiro';
+
+-- SUBQUERIE OU SUBCONSULTA PARA A PARTIR DA EMPRESA DO CLIENTE EU TRAZER QUAIS SÃO AS SUAS RESPECTIVAS FATURAS
+SELECT
+	*
+FROM Clientes
+WHERE
+	Empresa = 'Around The Horn';
+
+SELECT
+	*
+FROM Faturas;
+
+SELECT
+	*
+FROM Faturas
+WHERE
+	ClienteId = (
+		SELECT
+			ClienteId
+		FROM Clientes
+        WHERE
+			Empresa = 'Around The Horn'
+    );
+
+-- COMO O BANCO ATUA SEM A SUBCONSULTA
+SELECT
+	*
+FROM Faturas
+WHERE
+	ClienteId = 'AROUT';
